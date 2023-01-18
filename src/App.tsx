@@ -5,9 +5,8 @@ import { Dashboard } from "./components/Dashboard";
 import { About } from "./components/About";
 import { Login } from "./components/Login";
 import { Signup } from "./components/Signup";
-import { Footer } from "./components/Footer";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="flex flex-col min-h-screen">
       <Router>
@@ -20,7 +19,6 @@ function App() {
           <Route path="/signup" element={<Signup />}></Route>
         </Routes>
       </Router>
-      <Footer />
     </div>
   );
 }

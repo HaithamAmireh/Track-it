@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-green-800;
+    @apply bg-gray-800;
   }
 }
