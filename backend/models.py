@@ -4,7 +4,7 @@ from exts import db
 """
 class ExpenseEntry
     id:int primary key
-    amount: int
+    amount: float
     title: str
     category: str
 """
@@ -12,7 +12,7 @@ class ExpenseEntry
 class ExpenseEntry(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     title = db.Column(db.String(), nullable=False)
-    amount = db.Column(db.Integer(), nullable=True)
+    amount = db.Column(db.Float(), nullable=True)
     category = db.Column(db.String(), nullable=False)
 
     def __repr__(self):

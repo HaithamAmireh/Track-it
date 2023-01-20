@@ -20,7 +20,7 @@ entry_model = api.model(
     "Entry",
     {
         "id": fields.Integer(),
-        "amount": fields.Integer(),
+        "amount": fields.Float(),
         "title": fields.String(),
         "category": fields.String()
     }
