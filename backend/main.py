@@ -4,10 +4,13 @@ from config import DevConfig
 from models import ExpenseEntry
 from exts import db
 from flask_migrate import Migrate
+from flask_cors import CORS
 
 app = Flask(__name__)
 
 app.config.from_object(DevConfig)
+
+CORS(app)
 
 db.init_app(app)
 
