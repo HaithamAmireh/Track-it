@@ -42,7 +42,7 @@ class EntriesResource(Resource):
         """Get all entries"""
         entries = ExpenseEntry.query.all()
 
-        return entries, 201
+        return entries, 200
 
     @api.marshal_with(entry_model)
     def post(self):
@@ -57,7 +57,7 @@ class EntriesResource(Resource):
 
         new_entry.save()
         
-        return new_entry
+        return new_entry, 201
 
 @api.route('/entry/<int:id>')
 class EntryResource(Resource):
