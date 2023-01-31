@@ -9,13 +9,7 @@ export const Navbar: React.FC = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="p-2 mx-1 md:mx-2hover:text-green-50 hover:animate-pulse duration-75">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="p-2 mx-1 md:mx-2hover:text-green-50 hover:animate-pulse duration-75">
           <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li className="p-2 mx-1 md:mx-2 hover:text-green-50 hover:animate-pulse duration-75">
-          <Link to="/login">Login</Link>
         </li>
       </ul>
     </div>

@@ -21,7 +21,7 @@ export const Landing: React.FC = () => {
           </b>{" "}
           is a free tool to keep track of your finances, you do the purchasing
           and we will keep track of the{" "}
-          <b className="text-yellow-50">What, What for and How much.</b>
+          <b className="text-yellow-50 indent-8">What, What for and How much.</b>
         </p>
       </div>
       <Link
